@@ -1,19 +1,5 @@
-use Student1;
 
 /*
-    游标是一种能从包括多条数据记录的结构几种每次提取一条记录的机制
-    游标的使用
-        声明游标
-        打开游标
-        读取游标中的数据
-        关闭游标
-        释放游标
-
-    @@fetch_status变量有三个不同的返回值
-        0 ： fetch语句执行成功
-        -1：fetch语句执行失败或者数据超出游标数据结果集的范围
-        -2：表示提取的数据不存在
-
     存储过程
     存储过程（Stored Procedure）是一组完成特定功能的SQL语句集
     ，经编译后存储在数据库中，用户通过制定存储过程的名字并给出参数
@@ -197,3 +183,33 @@ begin
             rollback transaction
         end
 end
+
+--数据库系统概论
+
+/*
+ T-SQL即Transact-SQL，是在Mcrosoft SQL Sever上的增强版
+    SQL sever专用标准结构化查询语言增强版
+
+ set 一次只能赋值一个变量
+ select 可以一次赋值多个变量
+ */
+
+declare @myvar char(10);
+set @myvar='Hello world!'
+print @myvar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
